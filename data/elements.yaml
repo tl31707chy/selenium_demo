@@ -1,0 +1,12 @@
+登录页面:
+  用户名:
+    name: 'username'
+  密码:
+    name: 'password'
+  登录:
+    xpath: '//*[@id="app"]/div/form/button'
+  首页:
+    xpath: '//span[text()="首页"]'
+  错误提示:
+    xpath: '//p[text()="用户名或者密码错误"]'
+

@@ -1,0 +1,40 @@
+{
+  "login": [
+    {
+      "用例编号": "0001",
+      "用例标题": "验证登录功能是否正常",
+      "标签": "normal_flow",
+      "测试数据": {
+        "username": "admin",
+        "password": "admin"
+      },
+      "期望结果": "首页",
+      "模块": "登录",
+      "用例等级": "blocker"
+    },
+    {
+      "用例编号": "0002",
+      "用例标题": "验证输入错误的用户是否登录失败",
+      "标签": "error_username_password",
+      "测试数据": {
+        "username": "${get_random_str}",
+        "password": "admin"
+      },
+      "期望结果": "用户名或者密码错误",
+      "模块": "登录",
+      "用例等级": "normal"
+    },
+    {
+      "用例编号": "0003",
+      "用例标题": "验证输入错误的密码是否登录失败",
+      "标签": "error_username_password",
+      "测试数据": {
+        "username": "admin",
+        "password": "${get_random_str}"
+      },
+      "期望结果": "用户名或者密码错误",
+      "模块": "登录",
+      "用例等级": "normal"
+    }
+  ]
+}
